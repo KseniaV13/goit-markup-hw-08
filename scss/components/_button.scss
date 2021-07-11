@@ -1,0 +1,14 @@
+.button {
+  cursor: pointer;
+  font-weight: $semi-bold-font;
+  font-style: normal;
+  padding: 9.63px 32px;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: $max-spacing;
+  background:$accent-color;
+  color: $white-base-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+}

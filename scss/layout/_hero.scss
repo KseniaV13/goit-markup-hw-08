@@ -1,0 +1,46 @@
+/*герой*/
+.hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid #000000;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/Imgfon.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero {
+  padding: 118px 0;
+  text-align: center;
+  @media screen and (min-width: $desktop) {
+    padding: 200px 0;
+  }
+}
+
+.hero__title-hero {
+  font-style: normal;
+  font-weight: $bold-font;
+  text-transform: uppercase;
+  letter-spacing: $max-spacing;
+  font-size: 26px;
+  line-height: 1.364em;
+  text-align: center;
+  color: $white-base-color;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 44px;
+  }
+}
+
+.backdrop {
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  left: 0px;
+  top: 0px;
+  background-color: $backdrop-color;
+}

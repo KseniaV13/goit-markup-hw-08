@@ -1,0 +1,62 @@
+/*Кнопки портфолио*/
+.portfolio__button-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+.portfolio__button-portfolio > li {
+  text-align: center;
+  font-weight: $regular-font;
+  font-size: 16px;
+  line-height: 1.625;
+  top: 174px;
+  left: 495px;
+  padding-left: 8px;
+}
+.portfolio__all {
+  margin-bottom: 15px;
+  &:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0;
+  }
+}
+.portfolio__all-button {
+  cursor: pointer;
+  background: $button-color;
+  border-radius: 4px;
+  padding: 10px 32px;
+  font-weight: $regular-font;
+  letter-spacing: $normal-spacing;
+  color: $black-color-base;
+  border: none;
+  width: 100%;
+}
+.portfolio__all-button {
+  &:hover,
+  &:focus {
+    color: $white-base-color;
+    background: $accent-color;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition-duration: $duration;
+    transition-timing-function: $timing-function;
+  }
+}

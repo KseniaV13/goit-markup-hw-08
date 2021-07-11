@@ -1,0 +1,125 @@
+/*4 пункта иконки*/
+
+.features__advantages {
+  position: relative;
+  display: block;
+  // flex-direction: column;
+  // justify-content: space-between;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .features__advantages-link {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-bottom: 30px;
+    background: $button-color;
+  }
+  .features__list:last-child {
+    margin-bottom: 0;
+  }
+  .features__list {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    position: relative;
+    @media screen and (min-width: $tablet) {
+      flex-basis: calc((100% - 30px) / 2);
+      width: auto;
+      &:nth-child(odd) {
+        margin-right: 30px;
+      }
+    }
+    @media screen and (min-width: $desktop) {
+      flex-basis: calc((100% - 90px) / 4);
+      &:not(:last-child) {
+        margin-right: 30px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.features__advantages-icon {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+.features__subtitle {
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: $semi-bold-font;
+  letter-spacing: $normal-spacing;
+  color: $black-color-base;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: $tablet) {
+    text-align: left;
+  }
+}
+
+.features__description {
+  font-style: normal;
+  font-weight: $min-font;
+  font-size: 14px;
+  line-height: 1.714;
+  color: $grey-color;
+  letter-spacing: $normal-spacing;
+}
+
+/*Занятие студия*/
+
+@media (max-width: 1200px) {
+  .qwe {
+    display: none;
+  }
+}
+.qwe {
+  margin-top: 94px;
+}
+.features__work-list {
+  font-size: 36px;
+  line-height: 42px;
+  color: $black-color-base;
+  text-align: center;
+}
+
+.features__work-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.features__work-image {
+  position: relative;
+  flex-basis: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 0;
+}
+.features__work-image:last-child {
+  margin-right: 0;
+}
+
+.features__text-on-picture {
+  font-size: 14px;
+  font-weight: $semi-bold-font;
+  text-align: center;
+  letter-spacing: $normal-spacing;
+  text-transform: uppercase;
+  color: $white-base-color;
+}
+.features__fon-pictures {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background: $fon-on-picture;
+}
