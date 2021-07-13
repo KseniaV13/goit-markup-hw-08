@@ -103,6 +103,7 @@
   }
 }
 .header-contacts > li:not(:last-child) {
+ 
   @media screen and (min-width: $desktop) {
     margin-right: 50px;
   }

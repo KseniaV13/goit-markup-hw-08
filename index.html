@@ -42,19 +42,19 @@
       </div>
 
  
-      <!-- Mobile-menu -->
+      <!-- Мобильное меню -->
       <div>
        <nav>
           <button class="menu-open" type="button"  >
-            <svg width="48" height="32">
-              <use xlink:href="./image/icon/icons-modal.svg#menu_24px"></use>
+            <svg   width="40" height="40">
+              <use   xlink:href="./image/icon/sprite.svg#menu-open"></use>
             </svg>
           </button>
           
           <div class="mobile-menu is-hidden">
             <button class="menu-close"  type="button"> 
-              <svg width="11" height="11">
-                <use  href="./image/icon/sprite.svg#icon-vector"></use>
+              <svg width="40" height="40">
+                <use  class="icon-menu "href="./image/icon/sprite.svg#icon-vector-menu"></use>
               </svg>
             </button>
 
@@ -172,22 +172,54 @@
           <h2 class="work general-title">Чем мы занимаемся</h2>
           <ul class="features__work-list">
             <li class="features__work-image">
-              <img class="features__work-picture" src="image/box1.jpg" alt="картинка планшет и клавиатура" />
               <div class="features__fon-pictures">
                 <p class="features__text-on-picture">Десктопные приложения</p>
               </div>
+              <picture>
+                <source
+                  srcset="
+                    ./image/team-work/d-work-1.jpg   1x,
+                    ./image/team-work/d-work-1@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+               <img class="features__work-picture" src="image/team-work/d-work-1.jpg" alt="картинка планшет и клавиатура" />
+              </picture>
             </li>
+
+
             <li class="features__work-image">
-              <img class="features__work-picture" src="image/box2.jpg" alt="картинка телефон и ноутбук" />
               <div class="features__fon-pictures">
                 <p class="features__text-on-picture">Мобильные приложения</p>
               </div>
+              <picture>
+                <source
+                  srcset="
+                    ./image/team-work/d-work-2.jpg   1x,
+                    ./image/team-work/d-work-2@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+               <img class="features__work-picture" src="image/team-work/d-work-2.jpg" alt="картинка телефон и ноутбук" />
+              </picture>
             </li>
+
+
             <li class="features__work-image">
-              <img class="features__work-picture" src="image/box3.jpg" alt="картинка планшет" />
               <div class="features__fon-pictures">
                 <p class="features__text-on-picture">Дизайнерские решения</p>
               </div>
+                <picture>
+                  <source
+                    srcset="
+                      ./image/team-work/d-work-3.jpg   1x,
+                      ./image/team-work/d-work-3@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                 <img class="features__work-picture" src="image/team-work/d-work-3.jpg" alt="картинка планшет" />
+                </picture>
+          
             </li>
           </ul>
        </div>
@@ -199,9 +231,38 @@
       <section class=" team">
         <div class="container">
           <h2 class="title-team general-title">Наша команда</h2>
+
+
           <ul class="team__team-list">
             <li class="team__command">
-              <img src="image/photo1.jpg" width="270" alt="Игорь Демяненко" />
+              <picture class="team-cards__photo">
+                <source
+                  srcset="
+                  ./image/team-work/m-team-1.jpg 1x,
+                  ./image/team-work/m-team-1@2x.jpg  2x
+                  "
+                  media="(max-width: 768px)"
+                />
+                <source
+                  srcset="
+                  ./image/team-work/t-team-1.jpg 1x,
+                  ./image/team-work/t-team-1@2x.jpg  2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                  ./image/team-work/d-team-1.jpg 1x,
+                  ./image/team-work/d-team-1@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./image/team-work/d-team-1.jpg"
+                  width="270"
+                  alt="Игорь Демяненко"
+                />
+              </picture>
               <div class="team__our-list">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__profession">Product Designer</p>
@@ -237,8 +298,36 @@
                 </ul>
               </div>
             </li>
+
             <li class="team__command">
-              <img src="image/photo2.jpg" width="270" alt="Ольга Репина" />
+              <picture class="team-cards__photo">
+                <source
+                  srcset="
+                  ./image/team-work/m-team-2.jpg 1x,
+                  ./image/team-work/m-team-2@2x.jpg  2x
+                  "
+                  media="(max-width: 768px)"
+                />
+                <source
+                  srcset="
+                  ./image/team-work/t-team-2.jpg 1x,
+                  ./image/team-work/t-team-2@2x.jpg  2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                  ./image/team-work/d-team-2.jpg 1x,
+                  ./image/team-work/d-team-2@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./image/team-work/d-team-2.jpg"
+                  width="270"
+                  alt="Ольга Репина"
+                />
+              </picture>
               <div class="team__our-list">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__profession">Frontend Developer</p>
@@ -274,8 +363,36 @@
                 </ul>
               </div>
             </li>
+
             <li class="team__command">
-              <img src="image/photo3.jpg" width="270" alt="Николай Тарасов" />
+              <picture class="team-cards__photo">
+                <source
+                  srcset="
+                  ./image/team-work/m-team-3.jpg 1x,
+                  ./image/team-work/m-team-3@2x.jpg  2x
+                  "
+                  media="(max-width: 768px)"
+                />
+                <source
+                  srcset="
+                  ./image/team-work/t-team-3.jpg 1x,
+                  ./image/team-work/t-team-3@2x.jpg  2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                  ./image/team-work/d-team-3.jpg 1x,
+                  ./image/team-work/d-team-3@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./image/team-work/d-team-3.jpg"
+                  width="270"
+                  alt="Николай Тарасов"
+                />
+              </picture>
               <div class="team__our-list">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__profession">Marketing</p>
@@ -311,8 +428,36 @@
                 </ul>
               </div>
             </li>
+
             <li class="team__command">
-              <img src="image/photo4.jpg" width="270" alt="Михаил Ермаков" />
+              <picture class="team-cards__photo">
+                <source
+                  srcset="
+                  ./image/team-work/m-team-4.jpg 1x,
+                  ./image/team-work/m-team-4@2x.jpg  2x
+                  "
+                  media="(max-width: 768px)"
+                />
+                <source
+                  srcset="
+                  ./image/team-work/t-team-4.jpg 1x,
+                  ./image/team-work/t-team-4@2x.jpg  2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                  ./image/team-work/d-team-4.jpg 1x,
+                  ./image/team-work/d-team-4@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./image/team-work/d-team-4.jpg"
+                  width="270"
+                  alt="Михаил Ермаков"
+                />
+              </picture>
               <div class="team__our-list">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__profession">UI Designer</p>
